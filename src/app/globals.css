@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.text-shadow-4{
+    text-shadow: 0px 0px 4px black;
+}
+
+
+
+/* *{
+    border-width: 1px;
+    border-color: #ffffff67;
+    margin: 2px;
+} */
+
+/* span{
+    display: inline-block;
+} */
+
+
+.section{
+    @apply flex my-4
+}
+
+.block-info{
+    @apply p-2 pt-1 rounded-lg backdrop-blur-sm shadow-section
+}
+
+.lable{
+    @apply mb-2 text-white text-xl
+}
+
+.info{
+    @apply inline-block basis-2/3 text-white text-sm text-shadow-4
+}
