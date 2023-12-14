@@ -8,11 +8,11 @@ export default function Home() {
 
       <main className="z-10 max-w-5xl flex flex-col flex-1 overflow-hidden">
         
-        <header className='flex p-4 pt-1 rounded-lg justify-between bg-cyan-300'>
+        <header className='flex p-4 pt-1 rounded-lg justify-between bg-cyan-300 opacity-30'>
 
           <h1 className="text-2xl font-bold text-white">NASA</h1>
 
-          {/* <ul className="flex [&>*]:p-1 [&>*]:px-0">
+          {/* <ul className="flex [&>*]:p-1 [&>*]:px-0">z
             <li>Характеристики</li>
             <li>Стоймость</li>
           </ul> */}

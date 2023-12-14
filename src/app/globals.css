@@ -21,7 +21,8 @@
 
 
 .section{
-    @apply flex my-4
+    /* my-4 */
+    @apply flex
 }
 
 .block-info{
@@ -41,22 +42,27 @@
 } */
 
 .main-carousel{
-    display: table-row;
+    /* display: table-row; */
     /* flex-direction: column; */
-    justify-content: center;
-    align-items: center;
-    height: 85%;
+
+    /* justify-content: center; */
+    /* align-items: center; */
+    height: 100%;
     /* flex: 1; */
     background-color: rgba(91, 218, 32, 0.342);
-    overflow: hidden;
+    /* overflow: hidden; */
     overflow-y: auto;
 
+}
+.main-carousel::-webkit-scrollbar { 
+    width: 0;
 }
 
 .section{
     /* flex-basis: 0; */
+    margin: auto;
     padding: .5rem;
-    background-color: bisque;
+    background-color: rgb(58, 40, 65);
     /* flex: 1; */
     height: 100%;
     width: 85%;
