@@ -4,7 +4,7 @@ import React from 'react'
 
 
 import { Box, CameraControls } from '@react-three/drei'
-import { Vector3 } from 'three'
+import { PerspectiveCamera, Vector3 } from 'three'
 
 import MainModel from './models/MainModel'
 
@@ -16,16 +16,19 @@ function MainScene() {
         <div className='absolute inset-0'>
             <Canvas 
                 className="" //bg-slate-300
-                camera={{
-                    position: [0, 0, 1],
-                    near:0.001,
-                    far:1000
-                }}
+                // camera={{
+                //     position: [0, 0, 1],
+                //     near:0.001,
+                //     far:1000
+                // }}
                 
             >
-                <CameraControls />
+                <CameraControls 
+                    // camera={  new PerspectiveCamera(50,1,0.01,1000) }
+
+                />
                 {/* <pointLight position={[1, 1, 1]} intensity={10} /> */}
-                <ambientLight intensity={3} />
+                <ambientLight intensity={2} />
 
                 <MainModel/>
 
