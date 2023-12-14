@@ -21,6 +21,9 @@ function MainScene() {
                 //     near:0.001,
                 //     far:1000
                 // }}
+                camera={{
+                    position:[4,0,0]
+                }}
                 
             >
                 <CameraControls 
@@ -28,12 +31,19 @@ function MainScene() {
 
                 />
                 {/* <pointLight position={[1, 1, 1]} intensity={10} /> */}
-                <ambientLight intensity={2} />
-
+                {/* <ambientLight intensity={2} /> */}
+                <directionalLight position={[2, 2, 2]} intensity={2}/>
+                <ambientLight />
+                {/* <pointLight position={[4, 4, 4]}  /> */}
                 <MainModel/>
 
                 {/* <Box position={new Vector3(1,2)}/>
                 <Box position={new Vector3(1,0)}/> */}
+
+                {/* <mesh>
+                    <sphereGeometry  />
+                    <meshStandardMaterial color="hotpink" alphaTest={0.5} opacity={.5} />
+                </mesh> */}
             </Canvas>
         </div>
         

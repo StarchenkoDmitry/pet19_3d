@@ -35,3 +35,31 @@
 .info{
     @apply inline-block basis-2/3 text-white text-sm text-shadow-4
 }
+
+
+/* .section{
+} */
+
+.main-carousel{
+    display: table-row;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+    /* flex: 1; */
+    background-color: rgba(91, 218, 32, 0.342);
+    overflow: hidden;
+    overflow-y: auto;
+
+}
+
+.section{
+    /* flex-basis: 0; */
+    padding: .5rem;
+    background-color: bisque;
+    /* flex: 1; */
+    height: 100%;
+    width: 85%;
+    /* top:0;
+    bottom: 0; */
+}

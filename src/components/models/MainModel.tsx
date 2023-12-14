@@ -2,6 +2,7 @@
 import { CameraControls, useGLTF } from '@react-three/drei'
 import { useFrame, useThree } from '@react-three/fiber'
 import React, { useEffect, useRef, useState } from 'react'
+import { Group, Object3DEventMap } from 'three'
 
 import { GLTFLoader } from 'three-stdlib'
 
@@ -13,7 +14,7 @@ function MainModel(props: Props) {
     console.log("camera:", camera,viewport)
     
     const groupRef = useRef<any>(null)
-    const [data,setData] = useState<any>()
+    const [data,setData] = useState< Group<Object3DEventMap>>()
 
     useEffect(()=>{
         const loader = new GLTFLoader()
@@ -26,7 +27,8 @@ function MainModel(props: Props) {
     useFrame(()=>{
         // camera.position.x += 0.1
         if(!data)return 
-        data.rotation.y += 0.01
+        // data.rotation.y += 0.01
+        // data.scale.x += 0.01
     })
 
     
@@ -35,6 +37,7 @@ function MainModel(props: Props) {
     return (
         <>
             <group ref={groupRef} dispose={null}>
+
             {
                 !!data && 
                 <primitive object={data}></primitive>
