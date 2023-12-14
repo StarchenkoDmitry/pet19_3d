@@ -7,6 +7,15 @@
     text-shadow: 0px 0px 4px black;
 }
 
+.newMaxH{
+    height: 100vh;
+    /* height: 100dvh; */
+    /* height: 100lvh; */
+    /* height: 100svh; */
+
+    /* height: calc(100vh - calc(100vh - 100%)) */
+}
+
 
 .main-carousel{
     /* display: table-row; */
@@ -17,7 +26,7 @@
     height: 100%;
     /* flex: 1; */
     background-color: rgba(91, 218, 32, 0.342);
-    /* overflow: hidden; */
+    overflow: hidden;
     overflow-y: auto;
 
 }
@@ -27,7 +36,7 @@
 
 
 .section{
-    display: flex;
+    /* display: flex; */
 
     margin: .25rem auto;
     padding: .5rem;
