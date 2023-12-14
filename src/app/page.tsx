@@ -25,7 +25,7 @@ export default function Home() {
 
           <section className="section max-md:flex">
 
-            <div className="flex max-md:flex-col-reverse max-md:flex-1  ">
+            <div className="flex max-md:flex-col-reverse max-md:flex-1">
 
               <div className="block-info basis-2/3 max-md:basis-0">
                 <h2 className="lable">Curiosity (c англ. любопытство)</h2>

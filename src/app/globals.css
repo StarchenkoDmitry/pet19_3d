@@ -8,10 +8,10 @@
 }
 
 .newMaxH{
-    height: 100vh;
+    /* height: 100vh; */
     /* height: 100dvh; */
     /* height: 100lvh; */
-    /* height: 100svh; */
+    height: 100svh;
 
     /* height: calc(100vh - calc(100vh - 100%)) */
 }
@@ -29,6 +29,8 @@
     overflow: hidden;
     overflow-y: auto;
 
+    scroll-snap-type: y mandatory;
+
 }
 .main-carousel::-webkit-scrollbar { 
     width: 0;
@@ -43,6 +45,8 @@
     background-color: rgb(58, 40, 65);
     height: 100%;
     width: 85%;
+
+    scroll-snap-align: start;
 }
 
 
